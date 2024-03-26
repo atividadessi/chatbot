@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!-- Botão "Iniciar Conversa" -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Iniciar Conversa"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FFA500"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:visibility="invisible"/>
+
+    <!-- Botão "Quero fazer o pedido" -->
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer o pedido"
+        android:visibility="gone"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <!-- Rodapé amarelo -->
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFD700"
+        android:gravity="center"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nash Pizza's - Bot"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- Mensagens -->
+    <ScrollView
+        android:id="@+id/message_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/input_layout"
+        android:layout_below="@id/footer_layout"
+        android:padding="8dp">
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    <!-- Botão de Confirmar recebimento -->
+    <Button
+        android:id="@+id/confirm_receipt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar recebimento"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+    <!-- Caixa de entrada -->
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mensagem"
+            android:padding="16dp"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

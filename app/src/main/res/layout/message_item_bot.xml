@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start">
+
+    <!-- ImageView para exibir o avatar do bot -->
+    <ImageView
+        android:id="@+id/bot_avatar_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- LinearLayout para o texto da mensagem -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bot_message_background"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- TextView para o texto da mensagem -->
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+
+        <!-- TextView para o nome do remetente -->
+        <TextView
+            android:id="@+id/sender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

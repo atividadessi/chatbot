@@ -1,0 +1,14 @@
+package com.example.chatbotia.enums
+
+enum class ConversationState {
+    DEFAULT,
+    INIT,
+    ASKED_FOR_PIZZA_QUANTITY,
+    SELECTING_PIZZA_OPTIONS,
+    SEND_DETAILS_ORDER,
+    ASK_NAME_USER,
+    ASK_ADRESS_USER,
+    CALCULATE_TOTAL_ORDER,
+    NOTIFY_ORDER_IN_TRANSIT,
+    ASK_FOR_PIZZA_QUANTITY
+}
