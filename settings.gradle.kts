@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ChatBotIA"
+rootProject.name = "chatbot"
 include(":app")
